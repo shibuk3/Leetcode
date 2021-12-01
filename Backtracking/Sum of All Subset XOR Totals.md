@@ -49,14 +49,6 @@ Constraints:
 1 <= nums[i] <= 20
 
 ### Solution:
-We store sum by including element and by excluding it. When we include elelment we cant use previously included sum(otherwise we will have adjecent element) so 
-
-included sum=element + excluded sum
-
-if we dont include we can have max of included or excluded sum
-
-excluded sum = max(included sum,excluded sum);
-
 ```
 class Solution {
 public:
